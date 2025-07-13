@@ -40,7 +40,7 @@ class WeatherDetailsViewModelTest {
         Dispatchers.setMain(testDispatcher)
         repository = mockk()
         savedStateHandle = SavedStateHandle()
-        viewModel = WeatherViewModel(repository, savedStateHandle)
+        viewModel = WeatherViewModel(savedStateHandle, repository)
     }
 
     @After

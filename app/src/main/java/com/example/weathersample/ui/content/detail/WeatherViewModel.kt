@@ -16,8 +16,8 @@ import javax.inject.Inject
 
 @HiltViewModel
 class WeatherViewModel @Inject constructor(
-    private val savedStateHandle: WeatherDetailRepository,
-    private val repository: SavedStateHandle
+    private val savedStateHandle: SavedStateHandle,
+    private val repository: WeatherDetailRepository
 ) : ViewModel() {
 
     companion object {
